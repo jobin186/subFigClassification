@@ -1,5 +1,5 @@
 function mainCbd(featur)
-% This function calculates the minimum average precision of 
+% This function calculates the mean average precision of 
 % document image patches. It calculates deep-features aswell as hand crafted features 
 %====================================================================================
 			%%%%%% Input parameters %%%%%%%%%%
@@ -96,9 +96,9 @@ if (exist('net')~=1)
 	            		load(imdb.encoderPath,'encoder');
         	    		imdb.encoder = encoder;
 			end
-        	case 'gabor'% this functionality is not ready
+        	case 'gabor' % this functionality is not ready
             		net = gaborFilterBank(5,8,39,39);
-       		 case 'dsift'% this functionality is not ready
+       		 case 'dsift' % this functionality is not ready
 	    	if (exist(imdb.encoderPath, 'file') == 2)
 	    		load(imdb.encoderPath, 'encoder');
             		imdb.encoder = encoder;
