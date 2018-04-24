@@ -1,4 +1,6 @@
 function mainCbd(featur)
+%
+%
 % This function calculates the mean average precision of 
 % document image patches. It calculates deep-features aswell as hand crafted features 
 %====================================================================================
